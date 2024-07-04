@@ -101,3 +101,8 @@
 - An AWS chosen one is used between the LB and the targets (example: `ELBSecurityPolicy-2016-08`)
 - Newer policies are more secure, but they are usually less compatible
 - If we must ensure that we have forward secrecy, we can chose an alternate: `ELBSecurityPolicy-FS`
+
+## MTLS on EKS
+-  To do MTLS on EKS, you need to Install the AWS Load Balancer Controller for Kubernetes. Using that controller, configure a Network Load Balancer with a TCP listener on port 443 to forward traffic to the IP addresses of the backend service Pods.
+![image](https://github.com/SlimaineB/AWS-Advanced-Networking-Specialty-ANS-C01-Course/assets/36957990/e05fd59e-8d1b-4a8f-9281-984d20fe3900)
+
