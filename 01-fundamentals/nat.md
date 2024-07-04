@@ -42,3 +42,6 @@
 - With PAT we can not initiate traffic from the outside to the devices inside the network. Without a NAT entry in the NAT table, the NAT device wont know where to forward the traffic from the outside
 
 ![PAT](images/NAT3.png)
+
+## Troubleshooting
+- To troubleshoot NatGateway traffic : Enable VPC flow logs on the NAT gateway's elastic network interface. Publish the logs to a log group in Amazon CloudWatch Logs. Use CloudWatch Logs Insights or Athena to query and analyze the logs.
